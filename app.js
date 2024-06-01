@@ -1,6 +1,5 @@
 let buttons = document.querySelectorAll("#button");
 let screenTxt = document.querySelector("#screenText");
-let clear = document.querySelector("#clear");
 let rng = document.querySelector("#rng");
 let num1 = 0;
 let result = "";
@@ -9,7 +8,7 @@ let result = "";
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     const buttonPress = button.innerText;
-    console.log(buttonPress);
+  
     getNumber(buttonPress);
   });
 });
@@ -34,7 +33,7 @@ const getNumber = (buttonPress) => {
       let lenEqual = new1.lastIndexOf("=");
 
       num1 = screenTxt.innerText.substring(0, lenEqual);
-      console.log(num1);
+     
 
       calculate(num1);
     }
@@ -44,7 +43,7 @@ const getNumber = (buttonPress) => {
 const calculate = (num1) => {
   result = result = eval(num1);
   let newres = Number(result);
-  console.log(newres);
+  
   screenTxt.innerText = `${newres}`;
 };
 
@@ -58,7 +57,7 @@ rng.addEventListener('input', () => {
     
 
     rng.textContent = value;
-    console.log(value);
+   
     setBrightness(value);
 });
 
