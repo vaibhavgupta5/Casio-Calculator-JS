@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casio Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="heading">PRESS <u>KEYS</u> TO USE!</h1>
+    <div class="calculator">
+        
+        <div class="upper">
+            <div class="upperup">
+                <p>CASIO</p>
+                <div class="solor"></div>
+                <p>DB-2S</p>
+            </div>
+        </div>
+
+        <div class="screen" style="font-family: times-new-roman; font-size: 2.5rem;">
+            <p id="screenText">00</p>
+        </div>
+
+        <div class="middle">
+            <input type="range" id="rng" min="0" max="10" value="5">
+            <div class="btnm">
+            <div class="grid-item"><button style="color: white; background-color: #4d484a;" id="button">AC</button></div>
+            <div class="grid-item"><button style="color: white; background-color: #4d484a;" id="button" >C</button></div></div>
+        </div>
+
+        <div class="lower">
+
+            <div class="grid-container" style="margin-right: 10px;">
+                <div class="grid-item"><button id="button" >XX</button></div>
+                <div class="grid-item"><button style="color: #a27854; background-color: #4d484a;" id="button">AC</button></div>
+                <div class="grid-item"><button>+/-</button></div>
+                <div class="grid-item"><button id="button" >◀</button></div>
+                <div class="grid-item"><button  id="button" style="color: #a27854; background-color: #4d484a;">C</button></div>
+
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item"><button >M+</button></div>
+                <div class="grid-item"><button id="button">7</button></div>
+                <div class="grid-item"><button  id="button">4</button></div>
+                <div class="grid-item"><button  id="button">1</button></div>
+                <div class="grid-item"><button  id="button">0</button></div>
+
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item"><button>M-</button></div>
+                <div class="grid-item"><button  id="button">8</button></div>
+                <div class="grid-item"><button  id="button">5</button></div>
+                <div class="grid-item"><button  id="button">2</button></div>
+                <div class="grid-item"><button  id="button">00</button></div>
+
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item"><button>MR</button></div>
+                <div class="grid-item"><button id="button">9</button></div>
+                <div class="grid-item"><button id="button">6</button></div>
+                <div class="grid-item"><button id="button">3</button></div>
+                <div class="grid-item"><button id="button">.</button></div>
+
+            </div>
+
+            <div class="grid-container" style="margin-left: 10px;">
+                <div class="grid-item"><button>Mc</button></div>
+                <div class="grid-item"><button id="button">%</button></div>
+                <div class="grid-item"><button id="button">*</button></div>
+                <div class="grid-item"><button  id="button"style="height: 6rem; color: #a27854; background-color: #4d484a;">=</button></div>
+
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item"><button>GT</button></div>
+                <div class="grid-item"><button id="button">√</button></div>
+                <div class="grid-item"><button id="button">/</button></div>
+                <div class="grid-item"><button id="button">-</button></div>
+                <div class="grid-item"><button id="button">+</button></div>
+
+            </div>
+        </div>
+<script src="app.js"></script>
+
+    </body>
+
+</html>
